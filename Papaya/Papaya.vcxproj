@@ -11,12 +11,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Papaya\Log.h" />
     <ClInclude Include="src\Papaya.h" />
     <ClInclude Include="src\Papaya\Application.h" />
     <ClInclude Include="src\Papaya\Core.h" />
     <ClInclude Include="src\Papaya\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Papaya\Log.cpp" />
     <ClCompile Include="src\Papaya\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -68,7 +70,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>PY_PLATFORM_WINDOWS;PY_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\LIBRARIES\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\LIBRARIES\SFML-2.5.1\include;$(SolutionDir)Papaya\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -85,7 +87,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\LIBRARIES\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\LIBRARIES\SFML-2.5.1\include;$(SolutionDir)Papaya\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

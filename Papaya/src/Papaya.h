@@ -3,6 +3,7 @@
 //FOR APP USE ONLY
 
 #include "Papaya/Application.h"
+#include "Papaya/Log.h"
 
 
 // --Entry Point --

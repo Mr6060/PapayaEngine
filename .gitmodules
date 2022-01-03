@@ -1,0 +1,3 @@
+[submodule "Papaya/vendor/spdlog"]
+	path = Papaya/vendor/spdlog
+	url = https://github.com/gabime/spdlog
