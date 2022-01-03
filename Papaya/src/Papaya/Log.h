@@ -22,3 +22,17 @@ namespace Papaya {
 	};
 
 }
+
+//core log macros
+#define PY_CORE_TRACE(...)   ::Papaya::Log::GetCoreLogger()->trace(__VA_ARGS__)
+#define PY_CORE_INFO(...)    ::Papaya::Log::GetCoreLogger()->info(__VA_ARGS__)
+#define PY_CORE_WARN(...)    ::Papaya::Log::GetCoreLogger()->warn(__VA_ARGS__)
+#define PY_CORE_ERROR(...)   ::Papaya::Log::GetCoreLogger()->error(__VA_ARGS__)
+#define PY_CORE_FATAL(...)   ::Papaya::Log::GetCoreLogger()->fatal(__VA_ARGS__)
+
+//client log macros
+#define PY_TRACE(...)        ::Papaya::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define PY_INFO(...)         ::Papaya::Log::GetClientLogger()->info(__VA_ARGS__)
+#define PY_WARN(...)         ::Papaya::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define PY_ERROR(...)        ::Papaya::Log::GetClientLogger()->error(__VA_ARGS__)
+#define PY_FATAL(...)        ::Papaya::Log::GetClientLogger()->fatal(__VA_ARGS__)
